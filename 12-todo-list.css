@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-input-grid {
+  align-items: stretch;
+  /*if we did not use this due to align center the box will shrink , thou i dont know the reason*/
+}
+
+.name-input,
+.due-date-input {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.add-todo-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.delete-todo-button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
